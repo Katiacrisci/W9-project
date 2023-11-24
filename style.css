@@ -1,0 +1,179 @@
+body {
+  height: 100%;
+}
+.iphone {
+  margin: auto;
+  border: 10px solid black;
+  border-radius: 40px;
+  width: 320px;
+  height: 700px;
+  position: relative;
+  box-shadow: 0px 20px 15px #33333335;
+}
+.notch {
+  z-index: 50;
+  top: 0;
+  left: 62px;
+  position: absolute;
+  background: #000000;
+  width: 200px;
+  height: 30px;
+  border-radius: 0px 0px 20px 20px;
+}
+.screen {
+  z-index: 10;
+  position: absolute;
+  background: url("./Assets/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3BmLWx1a2VzdGFja3Bvb2xlMS0wMjgxLWpvYjU3MS0yLmpwZw.webp");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+.icons {
+  margin-top: 40px;
+  justify-content: center;
+  display: flex;
+}
+.icons div {
+  margin: 10px;
+  z-index: 100;
+  background: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px #33333340;
+  cursor: pointer;
+  transition: transform 400ms ease-in-out;
+}
+.app:nth-child(1) {
+  background: url("./Assets/netflix.png");
+  background-size: cover;
+}
+.app:nth-child(2) {
+  background: url("./Assets/hbo.png");
+  background-size: cover;
+  background-position: center;
+}
+.app:nth-child(3) {
+  background: url("./Assets/apple-tv.png");
+  background-size: cover;
+}
+.app:nth-child(4) {
+  background: url("./Assets/ebay.png");
+  background-size: cover;
+  background-position: center;
+}
+.app_2_row:nth-child(1) {
+  background: url("./Assets/facebook.png");
+  background-size: cover;
+  background-position: center;
+}
+.app_2_row:nth-child(2) {
+  background: url("./Assets/logo.png");
+  background-size: cover;
+  background-position: center;
+}
+.app_2_row:nth-child(3) {
+  background: url("./Assets/telegram.png");
+  background-size: cover;
+  background-position: center;
+}
+.app_2_row:nth-child(4) {
+  background: url("./Assets/ali-express.png");
+  background-size: cover;
+  background-position: center;
+}
+.app_3_row:nth-child(1) {
+  background: url("./Assets/whatsapp.png");
+  background-size: cover;
+}
+.app_3_row:nth-child(2) {
+  background: url("./Assets/spotify.png");
+  background-size: cover;
+}
+.app_3_row:nth-child(3) {
+  background: url("./Assets/messenger.png");
+  background-size: cover;
+}
+.app_3_row:nth-child(4) {
+  background: url("./Assets/linkedin.png");
+  background-size: cover;
+}
+.app_4_row:nth-child(1) {
+  background: url("./Assets/music.png");
+  background-size: cover;
+}
+.app_4_row:nth-child(2) {
+  background: url("./Assets/google-maps.png");
+  background-size: cover;
+}
+.app_4_row:nth-child(3) {
+  background: url("./Assets/google-drive.png");
+  background-size: cover;
+}
+.app_4_row:nth-child(4) {
+  background: url("./Assets/github.png");
+  background-size: cover;
+  background-position: center;
+}
+.app_4_row#phone {
+  background: url("./Assets/phone.png");
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(50, 239, 50);
+}
+.icons div:hover {
+  transform: scale(0.8);
+}
+.camera {
+  position: absolute;
+  bottom: 8px;
+  right: 20px;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 0.2rem solid #1e1f22;
+  background: #447bb5a6;
+}
+.speaker {
+  position: absolute;
+  right: 3.9rem;
+  width: 5.2rem;
+  height: 0.6rem;
+  background: #333;
+  border-radius: 0.2rem;
+}
+.dock {
+  bottom: 0;
+  position: absolute;
+  margin-left: 20px;
+}
+#phone-app {
+  top: 150px;
+  margin-left: 25px;
+  position: relative;
+  width: 250px;
+}
+
+#phone-app button {
+  width: 65px;
+  height: 65px;
+  margin-bottom: 25px;
+  border-radius: 50%;
+  border: none;
+  background-color: lightgray;
+  font-size: 25px;
+}
+
+#phone-app button i {
+  color: white;
+}
+#phone-app button#dial {
+  background-color: rgb(32, 207, 32);
+}
+#phone-app button#dial.dialing {
+  background-color: red;
+}
+h1.text-center {
+    top: 50px;
+}

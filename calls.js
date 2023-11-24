@@ -31,3 +31,56 @@ var User = /** @class */ (function () {
 var firstUser = new User(50, 4);
 firstUser.ricarica(20);
 firstUser.chiamata(5);
+var secondUser = new User(0, 0);
+secondUser.ricarica(3);
+secondUser.chiamata(10);
+var thirdUser = new User(0, 0);
+thirdUser.ricarica(7);
+thirdUser.chiamata(3);
+var apriApp = function () {
+    var icons = document.getElementById("app-grid");
+    icons.style.display = "none";
+    var phoneApp = document.getElementById("phone-app");
+    phoneApp.classList.remove("d-none");
+    var wallpaper = document.querySelector(".screen");
+    wallpaper.style.background = "none";
+    wallpaper.remove();
+    var dock = document.querySelector(".dock");
+    dock.style.display = "none";
+};
+var phone = document.getElementById("phone");
+phone.addEventListener("click", apriApp);
+var intervalId;
+var toggleBtn = function (btn, id) {
+    if (id) {
+        clearInterval(id);
+    }
+    if (btn.classList.contains("dialing")) {
+        btn.classList.remove("dialing");
+        return;
+    }
+    btn.classList.add("dialing");
+};
+var parseTimeToString = function (time) {
+    return new Date(time * 1000).toISOString().substring(14, 19);
+};
+var parseTimeFromString = function (timeString) {
+    var time = timeString.split(":").reduce(function (acc, time) { return 60 * parseInt(acc) + time; });
+    return parseInt(time);
+};
+var timer = document.querySelector("#phone-app .row h1");
+var updateTimeStamp = function (prevValue) {
+    return setInterval(function () {
+        var newValue = ++prevValue;
+        timer.innerText = parseTimeToString(newValue);
+    }, 1000);
+};
+function dial() {
+    toggleBtn(dialBtn);
+    var timer = document.querySelector("#phone-app .row h1");
+    timer.innerText = "00:00";
+    intervalId = updateTimeStamp(parseTimeFromString(timer.innerText));
+}
+var dialBtn = document.getElementById("dial");
+console.log(dialBtn);
+dialBtn.addEventListener("click", dial);

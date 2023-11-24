@@ -1,11 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Smartphone</title>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="iphone">
+      <div class="screen"></div>
+      <div id="app-grid">
+        <div class="icons">
+          <div class="app"></div>
+          <div class="app"></div>
+          <div class="app"></div>
+          <div class="app"></div>
+        </div>
+        <div class="icons">
+          <div class="app_2_row"></div>
+          <div class="app_2_row"></div>
+          <div class="app_2_row"></div>
+          <div class="app_2_row"></div>
+        </div>
+        <div class="icons">
+          <div class="app_3_row"></div>
+          <div class="app_3_row"></div>
+          <div class="app_3_row"></div>
+          <div class="app_3_row"></div>
+        </div>
+        <div class="icons">
+          <div class="app_4_row"></div>
+          <div class="app_4_row"></div>
+          <div class="app_4_row"></div>
+          <div class="app_4_row"></div>
+        </div>
+      </div>
+      <div id="phone-app" class="d-none">
+        <div class="row">
+            <h1 class="text-center"></h1>
+            <p class="text-center"></p>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <button>1</button>
+          </div>
+          <div class="col-4">
+            <button>2</button>
+          </div>
+          <div class="col-4">
+            <button>3</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <button>4</button>
+          </div>
+          <div class="col-4">
+            <button>5</button>
+          </div>
+          <div class="col-4">
+            <button>6</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <button>7</button>
+          </div>
+          <div class="col-4">
+            <button>8</button>
+          </div>
+          <div class="col-4">
+            <button>9</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <button>*</button>
+          </div>
+          <div class="col-4">
+            <button>0</button>
+          </div>
+          <div class="col-4">
+            <button>#</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-4">
+            <button id="dial"><i class="fas fa-phone-alt"></i></button>
+          </div>
+          <div class="col-4"></div>
+        </div>
+      </div>
+      <div class="dock">
+        <div class="icons">
+          <div class="app_4_row" id="phone"></div>
+          <div class="app_4_row"></div>
+          <div class="app_4_row"></div>
+          <div class="app_4_row"></div>
+        </div>
+      </div>
+      <div class="notch">
+        <div class="camera"></div>
+        <div class="speaker"></div>
+      </div>
+    </div>
     <script src="./calls.js"></script>
-</body>
+  </body>
 </html>
